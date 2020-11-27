@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+/* *{
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  background-color: #fafafa;
+
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__header{
+  object-fit: contain;
+  background-color: white;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__headerImage{
+  object-fit: contain;
+
+}
+.app__signup {
   display: flex;
   flex-direction: column;
-  align-items: center;
+
+}
+
+.app__posts{
+  padding: 20px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+} */
+
+* {
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.app {
+  background-color: #fafafa;
+  padding-bottom: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__login {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: center;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid lightgray;
+}
+
+.app__loginHome {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid lightgray;
+  height: 5px;
+}
+
+.app__upload {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid lightgray;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.app__headerImage {
+  object-fit: contain;
+  height: 30px;
+  padding-left: 24%;
+}
+
+.app__headerImageLogin{
+    object-fit: contain;
+  height: 30px;
+
+}
+
+.app__headerRight {
+  display: flex;
+  align-items: center;
+}
+
+.app__headerRight > p {
+  margin-right: 5px;
+}
+
+.app__headerAvatar {
+  height: 30px !important;
+  width: 30px !important;
+}
+
+.app__header {
+  position: sticky;
+  top: 0;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 10px;
+}
+
+.app__posts {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 10px 30px;
+}
+
+.app__postsRight {
+  margin-left: 10px;
+}
+
+.Button__Register{
+  border-radius: 1rem;
+}
+.Button__Register:hover{
+    background-image: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);;
+
+}
+.Button__Login{
+  border-radius: 1rem;
+}
+
+.Button__Login:hover{
+    background-image: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);;
+
 }
